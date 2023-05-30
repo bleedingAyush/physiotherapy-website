@@ -3,15 +3,8 @@ import Link from "next/link";
 import React from "react";
 import HeroImg from "../../../../public/hero-image.webp";
 import phoneWhite from "../../../../public/phoneWhite.svg";
-import { event } from "nextjs-google-analytics";
 
 const Hero = () => {
-  const callClicked = () => {
-    event("call", {
-      category: "call",
-      label: "call",
-    });
-  };
   return (
     <div className="">
       <Image
@@ -27,7 +20,6 @@ const Hero = () => {
       </div>
       <div className="absolute md:left-8 top-[55%] md:top-[65%] md:max-w-[1140px] right-auto left-auto p-4 md:p-8">
         <Link
-          onClick={callClicked}
           href={"tel:982954720"}
           className="bg-primary justify-center w-40 flex font-bold text-slate-100 text-2xl px-4 py-2 rounded mt-12 gap-2"
         >
