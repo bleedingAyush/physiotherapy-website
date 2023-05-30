@@ -29,13 +29,6 @@ export default function Home() {
   return (
     <>
       <main className={`${customFont} font-poppins`}>
-        <Head>
-          <title>Dr. Mahaveer Suman | Physiotherapist</title>
-          <meta
-            name="description"
-            content="Dr. Mahaveer Suman: Expert Physiotherapist in Kota"
-          />
-        </Head>
         <GoogleAnalytics trackPageViews />
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
