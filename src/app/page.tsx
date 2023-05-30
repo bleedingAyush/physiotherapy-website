@@ -13,6 +13,7 @@ import electroImg from "../../public/electrotherapy.webp";
 import manualImg from "../../public/manual.jpg";
 import Review from "./components/Review";
 import FAQ from "./components/FAQ";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 const customFont = Poppins({
   subsets: ["devanagari"],
@@ -23,12 +24,13 @@ const customFont = Poppins({
 export default function Home() {
   return (
     <main className={`${customFont} font-poppins`}>
+      <GoogleAnalytics trackPageViews />
       {/* <Nav /> */}
       <Hero />
 
       <div className="mt-16 max-w-[1140px] mx-auto md:flex-row flex-col flex md:gap-24 p-4 md:p-0">
         <Image
-          src="/physio-exercise.webp"
+          src={physioImg}
           alt="Physio"
           className="object-cover h-full md:h-[45vh] md:w-[40vw] rounded "
         />
