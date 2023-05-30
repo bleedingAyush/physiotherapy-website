@@ -30,8 +30,6 @@ export default function Home() {
         <Image
           src="/physio-exercise.webp"
           alt="Physio"
-          width={100}
-          height={100}
           className="object-cover h-full md:h-[45vh] md:w-[40vw] rounded "
         />
         <div className="md:w-[40%] w-full flex flex-col gap-8 mt-8 md:m-0">
