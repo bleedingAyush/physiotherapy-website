@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "./components/Layout";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -16,6 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Dr. Mahaveer Suman | Physiotherapist</title>
+        <meta
+          name="description"
+          content="Dr. Mahaveer Suman: Expert Physiotherapist in Kota"
+        />
+      </Head>
+
       <body className={`${inter.className}`}>
         <Layout>{children}</Layout>
       </body>

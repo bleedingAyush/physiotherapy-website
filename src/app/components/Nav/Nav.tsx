@@ -63,7 +63,7 @@ const Nav = () => {
       <div className="max-w-[1140px] md:mx-auto relative flex items-center p-2 md:p-4">
         <div className="flex items-center">
           <Link href={"/"} className="flex items-center">
-            <Image src={Logo} height={70} alt="" />
+            <Image src={Logo} height={70} alt="Logo of the website." />
             <div className="flex flex-col">
               <span className="font-semibold text-neutral-900">
                 Physiotherapy
@@ -92,7 +92,7 @@ const Nav = () => {
               </div>
             </li> */}
               <li className=" font-medium text-slate-800 p-0 flex gap-0 md:gap-1.5">
-                <Image src={Map} alt="" height={20} />
+                <Image src={Map} alt="Map svg" height={20} />
 
                 <Link
                   className="Link route-link"
@@ -107,7 +107,7 @@ const Nav = () => {
               onClick={toggleSideMenu}
               className="z-10 block md:hidden absolute right-2 md:right-0"
             >
-              <Image src={menu} alt="" />
+              <Image src={menu} alt="Hamburger menu svg" />
             </button>
           </div>
         </div>
@@ -118,7 +118,12 @@ const Nav = () => {
           className="flex text-lg font-medium right-12 md:right-0"
           href={`tel:982954720`}
         >
-          <Image src={phone} height={20} alt="" className="mr-1" />
+          <Image
+            src={phone}
+            height={20}
+            alt="black phone svg"
+            className="mr-1"
+          />
           982954720
         </Link>
       </div>

@@ -43,7 +43,7 @@ export default function Home() {
       <div className="mt-16 max-w-[1140px] mx-auto md:flex-row flex-col flex md:gap-24 p-4 md:p-0">
         <Image
           src={physioImg}
-          alt="Physio"
+          alt="Physiotherapist image"
           className="object-cover h-full md:h-[45vh] md:w-[40vw] rounded "
         />
         <div className="md:w-[40%] w-full flex flex-col gap-8 mt-8 md:m-0">
@@ -63,7 +63,11 @@ export default function Home() {
         </h2>
         <div className="mt-12 flex flex-col items-center gap-12 md:gap-0 md:flex-row justify-between">
           <div className="w-[18rem] rounded shadow-2xl">
-            <Image src={electroImg} alt="" className="rounded" />
+            <Image
+              src={electroImg}
+              alt="Electrotherapy image"
+              className="rounded"
+            />
             <div className="p-4 flex flex-col gap-2">
               <span className="font-semibold text-lg text-neutral-900">
                 Electrotherapy
@@ -78,7 +82,11 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[18rem] rounded shadow-2xl">
-            <Image src={manualImg} alt="" className="rounded" />
+            <Image
+              src={manualImg}
+              alt="Manual Therapy Image"
+              className="rounded"
+            />
             <div className="p-4 flex flex-col gap-2">
               <span className="font-semibold text-lg text-neutral-900">
                 Manual Therapy
@@ -93,7 +101,11 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[18rem]  rounded shadow-2xl">
-            <Image src={physioImg} alt="" className="rounded" />
+            <Image
+              src={physioImg}
+              alt="Physiotherapy Image"
+              className="rounded"
+            />
             <div className="p-4 flex flex-col gap-2">
               <span className="font-semibold text-lg text-neutral-900">
                 Exercise Therapy

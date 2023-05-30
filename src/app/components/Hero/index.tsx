@@ -10,7 +10,7 @@ const Hero = () => {
       <Image
         src={HeroImg}
         className="object-cover left-0 h-[70vh] md:h-5/6"
-        alt=""
+        alt="Hero image"
         priority={true}
       />
       <div className=" font-poppins md:mx-auto md:left-8  absolute top-[45%] md:max-w-[1140px] md:right-auto md:left-auto p-4  md:p-8">
@@ -23,7 +23,7 @@ const Hero = () => {
           href={"tel:982954720"}
           className="bg-primary justify-center w-40 flex font-bold text-slate-100 text-2xl px-4 py-2 rounded mt-12 gap-2"
         >
-          <Image src={phoneWhite} alt="" />
+          <Image src={phoneWhite} alt="svg of a phone" />
           <span>Call Us</span>
         </Link>
       </div>

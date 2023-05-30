@@ -25,13 +25,13 @@ const Review = () => {
               style={{ width: "3.5rem" }}
               src={review1}
               className="rounded-full object-cover"
-              alt=""
+              alt="review image 1"
             />
             <div className="flex flex-col items-start">
               <span className="font-semibold text-neutral-900  text-xl">
                 Suman
               </span>
-              <Image src={StartG} alt="" />
+              <Image src={StartG} alt="review stars svg" />
             </div>
 
             {/* <img src="assets/1.jpeg" /> */}
@@ -47,13 +47,13 @@ const Review = () => {
               style={{ width: "3.5rem" }}
               src={review2}
               className="rounded-full object-cover"
-              alt=""
+              alt="review image 2"
             />
             <div className="flex flex-col items-start">
               <span className="font-semibold text-neutral-900  text-xl">
                 Mohit
               </span>
-              <Image src={StartG} alt="" />
+              <Image src={StartG} alt="review stars" />
             </div>
 
             {/* <img src="assets/1.jpeg" /> */}
@@ -69,13 +69,13 @@ const Review = () => {
               style={{ width: "3.5rem" }}
               src={review3}
               className="rounded-full object-cover"
-              alt=""
+              alt="review image 3"
             />
             <div className="flex flex-col items-start">
               <span className="font-semibold text-neutral-900  text-xl">
                 Kanishka
               </span>
-              <Image src={StartG} alt="" />
+              <Image src={StartG} alt="review stars 3" />
             </div>
 
             {/* <img src="assets/1.jpeg" /> */}

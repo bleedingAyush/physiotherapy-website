@@ -47,7 +47,7 @@ const About = () => {
           </div>
           <Image
             src={ownerImg}
-            alt=""
+            alt="Image of Dr. Mahaveer Suman"
             style={{ width: "16rem", height: "16rem" }}
             className="object-cover rounded-full"
           />
