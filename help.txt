@@ -1,0 +1,1 @@
+Run netlify build instead of npm run build
