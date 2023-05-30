@@ -14,13 +14,9 @@ import manualImg from "../../public/manual.jpg";
 import Review from "./components/Review";
 import FAQ from "./components/FAQ";
 import { GoogleAnalytics } from "nextjs-google-analytics";
-import TagManager from "react-gtm-module";
+import Script from "next/script";
 
-const tagManagerArgs = {
-  gtmId: "GTM-T8RBGPZ",
-};
-
-TagManager.initialize(tagManagerArgs);
+const gtmId = "GTM-T8RBGPZ";
 
 const customFont = Poppins({
   subsets: ["devanagari"],
@@ -32,6 +28,15 @@ export default function Home() {
   return (
     <main className={`${customFont} font-poppins`}>
       <GoogleAnalytics trackPageViews />
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${gtmId}');
+      `}
+      </Script>
       {/* <Nav /> */}
       <Hero />
 
