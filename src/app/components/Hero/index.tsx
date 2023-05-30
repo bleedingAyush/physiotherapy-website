@@ -8,7 +8,7 @@ import { event } from "nextjs-google-analytics";
 const Hero = () => {
   const callClicked = () => {
     event("call", {
-      category: "Contact",
+      category: "call",
       label: "call",
     });
   };
@@ -20,7 +20,7 @@ const Hero = () => {
         alt=""
         priority={true}
       />
-      <div className="max-w-[1140px] font-poppins md:mx-auto md:left-8  absolute top-[45%] md:max-w-[1140px] md:right-auto md:left-auto p-4  md:p-8">
+      <div className=" font-poppins md:mx-auto md:left-8  absolute top-[45%] md:max-w-[1140px] md:right-auto md:left-auto p-4  md:p-8">
         <h1 className="font-bold text-slate-100 text-4xl md:text-5xl w-[100%]	md:w-[60%] md:leading-[4rem]">
           Transforming Pain into Progress.
         </h1>
