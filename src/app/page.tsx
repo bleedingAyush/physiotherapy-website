@@ -14,6 +14,13 @@ import manualImg from "../../public/manual.jpg";
 import Review from "./components/Review";
 import FAQ from "./components/FAQ";
 import { GoogleAnalytics } from "nextjs-google-analytics";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "GTM-T8RBGPZ",
+};
+
+TagManager.initialize(tagManagerArgs);
 
 const customFont = Poppins({
   subsets: ["devanagari"],
